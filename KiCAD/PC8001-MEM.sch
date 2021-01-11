@@ -578,20 +578,14 @@ Text Label 700  4200 0    50   ~ 0
 ~RD
 Text Label 700  4900 0    50   ~ 0
 ~WR
-Wire Wire Line
-	1650 3350 2000 3350
 Text Label 1700 3350 0    50   ~ 0
 ~IORD
-Wire Wire Line
-	1650 3850 2000 3850
 Text Label 1700 3850 0    50   ~ 0
 ~IOWR
 Wire Wire Line
 	1650 4300 2000 4300
 Text Label 1700 4300 0    50   ~ 0
 ~MRD
-Wire Wire Line
-	1650 4800 2000 4800
 Text Label 1700 4800 0    50   ~ 0
 ~MWR
 Text Label 4450 2600 0    50   ~ 0
@@ -990,11 +984,11 @@ Text Label 2150 1800 0    50   ~ 0
 A0
 Wire Wire Line
 	2150 1800 2450 1800
-Text Label 2150 1900 0    50   ~ 0
+Text Label 2250 1900 0    50   ~ 0
 ~IORD
 Wire Wire Line
-	2150 2000 2450 2000
-Text Label 2150 2000 0    50   ~ 0
+	2200 2000 2450 2000
+Text Label 2250 2000 0    50   ~ 0
 ~IOWR
 Wire Wire Line
 	2150 1900 2450 1900
@@ -1037,10 +1031,8 @@ F 3 "" H 2350 2250 50  0001 C CNN
 	1    2350 2250
 	1    0    0    -1  
 $EndComp
-Text Label 2150 2500 0    50   ~ 0
+Text Label 2300 2500 0    50   ~ 0
 A2
-Wire Wire Line
-	2150 2500 2450 2500
 NoConn ~ 3450 2500
 NoConn ~ 3450 2400
 NoConn ~ 3450 1900
@@ -1663,7 +1655,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 8650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 4000 4950 4000
+	4750 4000 4900 4000
 Wire Wire Line
 	4750 4900 4950 4900
 Wire Wire Line
@@ -1714,32 +1706,29 @@ Wire Wire Line
 Connection ~ 8900 6300
 Connection ~ 9200 6300
 Wire Wire Line
-	5500 3500 5850 3500
+	5650 4350 6000 4350
 Wire Wire Line
-	5500 3600 5850 3600
+	5650 4450 6000 4450
 Wire Wire Line
-	5500 3700 5850 3700
-Text Label 5550 3500 0    50   ~ 0
+	5650 4550 6000 4550
+Text Label 5700 4350 0    50   ~ 0
 ~ROMDS0
-Text Label 5550 3600 0    50   ~ 0
+Text Label 5700 4450 0    50   ~ 0
 ~ROMDS1
-Text Label 5550 3700 0    50   ~ 0
+Text Label 5700 4550 0    50   ~ 0
 ~ROMDS2
-Text Label 5550 3800 0    50   ~ 0
+Text Label 5700 4650 0    50   ~ 0
 ~ROMDS3
 Wire Wire Line
-	4750 3800 5500 3800
+	5650 4650 5650 4550
 Wire Wire Line
-	5500 3800 5500 3700
-Connection ~ 5500 3800
+	5650 4650 6000 4650
+Connection ~ 5650 4450
 Wire Wire Line
-	5500 3800 5850 3800
-Connection ~ 5500 3600
+	5650 4450 5650 4350
+Connection ~ 5650 4550
 Wire Wire Line
-	5500 3600 5500 3500
-Connection ~ 5500 3700
-Wire Wire Line
-	5500 3700 5500 3600
+	5650 4550 5650 4450
 NoConn ~ 8950 2550
 NoConn ~ 8950 3000
 $Comp
@@ -2100,14 +2089,76 @@ Wire Wire Line
 	3750 6050 3750 6500
 Wire Wire Line
 	3750 6500 3250 6500
+Wire Wire Line
+	4900 4000 4900 4350
+Wire Wire Line
+	4900 4350 5650 4350
+Connection ~ 4900 4000
+Wire Wire Line
+	4900 4000 4950 4000
+Connection ~ 5650 4350
+Wire Wire Line
+	4750 3800 5200 3800
+Text Notes 5150 4550 0    50   ~ 0
+N-BASIC \nROM KILL
+Text Notes 700  6300 0    50   ~ 0
+RAM READ ENABLE
+Text Notes 700  6400 0    50   ~ 0
+RAM WRITE ENABLE
+Entry Wire Line
+	10950 1900 11050 1800
+Entry Wire Line
+	10950 1800 11050 1700
+Entry Wire Line
+	10950 1700 11050 1600
+Entry Wire Line
+	10950 1600 11050 1500
+Entry Wire Line
+	6000 4350 6100 4250
+Entry Wire Line
+	6000 4450 6100 4350
+Entry Wire Line
+	6000 4550 6100 4450
+Entry Wire Line
+	6000 4650 6100 4550
+Wire Wire Line
+	2550 4800 2550 5250
+Wire Wire Line
+	2550 5250 4700 5250
+Wire Wire Line
+	4700 5250 4700 5100
+Wire Wire Line
+	1650 4800 2550 4800
+Wire Wire Line
+	4650 4200 4650 4350
+Wire Wire Line
+	4650 4350 2000 4350
+Wire Wire Line
+	2000 4350 2000 4300
+Wire Wire Line
+	2200 2000 2200 3850
+Wire Wire Line
+	1650 3850 2200 3850
+Wire Wire Line
+	1650 3350 2150 3350
+Wire Wire Line
+	2150 1900 2150 3350
+Entry Wire Line
+	600  2900 700  3000
+Wire Wire Line
+	700  3000 2300 3000
+Wire Wire Line
+	2300 3000 2300 2500
+Wire Wire Line
+	2450 2500 2300 2500
 Wire Bus Line
 	3450 3400 3450 4600
 Wire Bus Line
 	11050 1000 11050 3000
 Wire Bus Line
-	600  1000 600  4800
-Wire Bus Line
 	4350 1000 4350 3400
+Wire Bus Line
+	600  1000 600  4800
 Wire Bus Line
 	7750 1000 7750 5000
 Wire Bus Line
