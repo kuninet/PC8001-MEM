@@ -1,0 +1,68 @@
+ AS V1.42 Beta [Bld 180] - Source File NBASIC-CPY.asm - Page 1 - 2021/01/17 17時18分38秒
+
+
+       1/       0 :                     ;
+       2/       0 :                     ; N-BASIC COPY & RAM START
+       3/       0 :                     ; 
+       4/       0 :                     ;
+       5/       0 :                     
+       6/       0 :                         CPU	Z80
+       7/       0 :                     
+       8/       0 : ="Z80"              TARGET:	equ	"Z80"
+       9/       0 :                     
+      10/    9000 :                         org 9000h
+      11/    9000 :                     
+      12/    9000 :                     START:
+      13/    9000 : 3E 10                   LD A,10h
+      14/    9002 : D3 E2                   OUT (0E2h),A
+      15/    9004 : 21 00 00                LD HL,0000h
+      16/    9007 : 11 00 00                LD DE,0000h
+      17/    900A : 01 00 60                LD BC,6000h
+      18/    900D : ED B0                   LDIR
+      19/    900F : 3E 11                   LD A,11h
+      20/    9011 : D3 E2                   OUT (0E2h),A
+      21/    9013 : C3 66 5C                JP 5C66h
+      22/    9016 :                         END
+ AS V1.42 Beta [Bld 180] - Source File NBASIC-CPY.asm - Page 2 - 2021/01/17 17時18分38秒
+
+
+  Symbol Table (* = unused):
+  --------------------------
+
+*ARCHITECTURE :  "x86_64-apple-osx" - | *BIGENDIAN :                      0 - |
+*BRANCHEXT :                      0 - | *CASESENSITIVE :                  0 - |
+*CONSTPI :        3.141592653589793 - | *DATE :                "2021/01/17" - |
+*FALSE :                          0 - | *FULLPMMU :                       1 - |
+*HAS64 :                          1 - | *HASDSP :                         0 - |
+*HASFPU :                         0 - | *HASPMMU :                        0 - |
+*INEXTMODE :                      0 - | *INLWORDMODE :                    0 - |
+*INMAXMODE :                      0 - | *INSRCMODE :                      0 - |
+*INSUPMODE :                      0 - | *LISTON :                         1 - |
+*MACEXP :                         7 - | *MOMCPU :                        80 - |
+*MOMCPUNAME :                 "Z80" - | *NESTMAX :                      100 - |
+*PACKING :                        0 - | *PADDING :                        1 - |
+*RELAXED :                        0 - | *START :                       9000 C |
+*TARGET :                     "Z80" - |
+*TIME :               "17\-026\-103\-12618\-027\-120\-12238\-025\-089\-110" - |
+*TRUE :                           1 - | *VERSION :                     142F - |
+*Z80SYNTAX :                      0 - |
+
+     31 symbols
+     31 unused symbols
+
+ AS V1.42 Beta [Bld 180] - Source File NBASIC-CPY.asm - Page 3 - 2021/01/17 17時18分38秒
+
+
+  Code Pages:
+  ----------
+
+STANDARD (0 changed characters)
+
+1 code page
+
+0.01 seconds assembly time
+
+     23 lines source file
+      1 pass
+      0 errors
+      0 warnings
