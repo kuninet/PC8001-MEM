@@ -2222,12 +2222,12 @@ Connection ~ 1650 6600
 Wire Wire Line
 	1650 6600 1650 6700
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 604F91E9
 P 5500 5050
-F 0 "J?" H 5580 5042 50  0000 L CNN
+F 0 "J2" H 5580 5042 50  0000 L CNN
 F 1 "MEM-CON" H 5580 4951 50  0000 L CNN
-F 2 "" H 5500 5050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 5050 50  0001 C CNN
 F 3 "~" H 5500 5050 50  0001 C CNN
 	1    5500 5050
 	1    0    0    -1  
